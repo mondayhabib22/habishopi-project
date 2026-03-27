@@ -1,0 +1,79 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "image": "images/phone-images/tech.png",
+      "spec": "Apple iPhone 17 Pro Max - 6.9\" - 512GB - 12GB - iOS 26...",
+      "price": "2,800,000"
+    },
+    {
+      "id": 2,
+      "image": "images/phone-images/samsung.avif",
+      "spec": "Samsung Galaxy S23 Plus 5G - 6.6\" - 256GB ROM - 8GB RAM...",
+      "price": "610,000"
+    },
+    {
+      "id": 3,
+      "image": "images/phone-images/google-pixel.jpg",
+      "spec": "Google Pixel Pixel 7 Pro 5G - 12GB RAM + 256GB ROM...",
+      "price": "780,000"
+    },
+    {
+      "id": 4,
+      "image": "images/phone-images/tecno-spark-40.jpg",
+      "spec": "Tecno Spark 40, 6.67\", 4GB RAM/128GB ROM, 5200mAH...",
+      "price": "175,999"
+    }
+  ],
+  "appliances": [
+    {
+      "id": 1,
+      "image": "images/appliances-images/samsung-air-conditioner.jpg",
+      "spec": "Samsung 1.5HP Air Conditioner - AR12TYHYCWK - White",
+      "price": "450,000"
+    },
+    {
+      "id": 2,
+      "image": "images/appliances-images/refrigerator.jpg",
+      "spec": "Nexus 50 Litres Bedside Refrigerator (NX-65) - Silver",
+      "price": "99,000"
+    },
+    {
+      "id": 3,
+      "image": "images/appliances-images/washing-machine.jpg",
+      "spec": "Haier Thermocool 6kg Top load Semi Automatic Washing Machine...",
+      "price": "218,400"
+    },
+    {
+      "id": 4,
+      "image": "images/appliances-images/microwave-oven.jpg",
+      "spec": "Hisense 20 Litres Manual Microwave Oven (H20MOMS14) - Silver",
+      "price": "150,000"
+    }
+  ], "fashions": [
+    {
+      "id": 1,
+      "image": "images/fashion-images/casual-shirt.jpg",
+      "spec": "PABANI Blue Micro-Check Formal Cotton Shirt",
+      "price": "74,000"
+    }, 
+    {
+      "id": 2,
+      "image": "images/fashion-images/denim-jeans.jpg",
+      "spec": "Jaop Iver Dennis Demin Jacket-Black",
+      "price": "44,000"
+    }, 
+    {
+      "id": 3,
+      "image": "images/fashion-images/running-sneakers.jpg",
+      "spec": "GALUIN 2024 Mens Casual Board Shoes Running Sneakers - Black",
+      "price": "11,000"
+    }, 
+    {
+      "id": 4,
+      "image": "images/fashion-images/leather-jacket.jpg",
+      "spec": "Men's Big Size Windproof Leather Jacket-Black",
+      "price": "17,000"
+    }
+  ]
+}
