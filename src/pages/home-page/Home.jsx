@@ -1,16 +1,20 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import axios from "axios";
+import gsap from "gsap";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import { Link } from "react-router";
 
 function Home() {
   const [phone, setPhone] = useState([]);
   const [appliances, setAppliances] = useState([]);
   const [fashions, setFashions] = useState([]);
 
+  const gridRef = useRef(null);
+
   useEffect(() => {
     const fetchPhones = async () => {
-      let response = await axios.get("http://localhost:3001/products");
+      let response = await axios.get("http://localhost:3001/phones");
       setPhone(response.data);
 
       response = await axios.get("http://localhost:3001/appliances");
@@ -22,6 +26,37 @@ function Home() {
 
     fetchPhones();
   }, []);
+
+  useEffect(() => {
+    const cards = gridRef.current?.querySelectorAll(".product-card");
+    if (!cards || cards.length === 0) return;
+
+    gsap.set(cards, { transformOrigin: "50% 50%" });
+    const hoverIn = (event) =>
+      gsap.to(event.currentTarget, {
+        scale: 1.08,
+        duration: 0.25,
+        ease: "power2.out",
+      });
+    const hoverOut = (event) =>
+      gsap.to(event.currentTarget, {
+        scale: 1,
+        duration: 0.25,
+        ease: "power2.out",
+      });
+
+    cards.forEach((card) => {
+      card.addEventListener("mouseenter", hoverIn);
+      card.addEventListener("mouseleave", hoverOut);
+    });
+
+    return () => {
+      cards.forEach((card) => {
+        card.removeEventListener("mouseenter", hoverIn);
+        card.removeEventListener("mouseleave", hoverOut);
+      });
+    };
+  }, [phone, appliances, fashions]);
 
   return (
     <div>
@@ -55,14 +90,16 @@ function Home() {
         <div className="shadow-2xl rounded mt-8">
           <div className="flex items-center justify-between bg-gray-700 p-4 rounded">
             <span className="font-bold">Phones</span>
-            <span className="font-bold">See All&gt;</span>
+            <Link to="/phones" className="font-bold">
+              See All&gt;
+            </Link>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
-            {phone.map((item) => (
+            {phone.slice(0, 4).map((item) => (
               <div
                 key={item.id}
-                className="p-4 m-2 rounded text-black hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+                className="product-card p-4 m-2 rounded text-black hover:shadow-lg transition-shadow duration-300 cursor-pointer"
               >
                 <img
                   src={item.image}
@@ -79,14 +116,16 @@ function Home() {
         <div className="shadow-2xl rounded mt-8">
           <div className="flex items-center justify-between bg-gray-700 p-4 rounded">
             <span className="font-bold">Appliances</span>
-            <span className="font-bold">See All&gt;</span>
+            <Link to="/appliances" className="font-bold">
+              See All&gt;
+            </Link>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
-            {appliances.map((item) => (
+            {appliances.slice(0, 4).map((item) => (
               <div
                 key={item.id}
-                className="p-4 m-2 rounded text-black hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+                className="product-card p-4 m-2 rounded text-black hover:shadow-lg transition-shadow duration-300 cursor-pointer"
               >
                 <img
                   src={item.image}
@@ -103,14 +142,16 @@ function Home() {
         <div className="shadow-2xl rounded mt-8">
           <div className="flex items-center justify-between bg-gray-700 p-4 rounded">
             <span className="font-bold">Phones</span>
-            <span className="font-bold">See All&gt;</span>
+            <Link to="/fashions" className="font-bold">
+              See All&gt;
+            </Link>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
-            {fashions.map((item) => (
+            {fashions.slice(0, 4).map((item) => (
               <div
                 key={item.id}
-                className="p-4 m-2 rounded text-black hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+                className="product-card p-4 m-2 rounded text-black hover:shadow-lg transition-shadow duration-300 cursor-pointer"
               >
                 <img
                   src={item.image}

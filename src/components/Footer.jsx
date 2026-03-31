@@ -1,6 +1,41 @@
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+
 const Footer = () => {
+  const footerRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(".footer-row", {
+        opacity: 0,
+        y: 40,
+        duration: 0.8,
+        stagger: 0.12,
+        ease: "power2.out",
+      });
+
+      gsap.from(".footer-bottom", {
+        opacity: 0,
+        y: 20,
+        duration: 0.8,
+        delay: 0.3,
+        ease: "power2.out",
+      });
+
+      gsap.from(".footer-newsletter", {
+        opacity: 0,
+        y: 30,
+        duration: 0.8,
+        delay: 0.5,
+        ease: "power2.out",
+      });
+    }, footerRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <div class="bg-gray-950 text-gray-300">
+    <div ref={footerRef} className="bg-gray-950 text-gray-300">
       <div class="max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-5 gap-10">
         <div class="md:col-span-2">
           <h2 class="text-3xl font-bold text-white">HabiShopi</h2>

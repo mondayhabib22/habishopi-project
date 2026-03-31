@@ -23,7 +23,7 @@ const Header = () => {
           to="/login"
           className="text-xl hover:text-blue-600 cursor-pointer py-1 px-4 rounded"
         >
-          Login
+          Login/Signup
         </Link>
         <Link
           to="/orders"

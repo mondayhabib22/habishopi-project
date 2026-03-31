@@ -1,5 +1,5 @@
 {
-  "products": [
+  "phones": [
     {
       "id": 1,
       "image": "images/phone-images/tech.png",
@@ -23,6 +23,78 @@
       "image": "images/phone-images/tecno-spark-40.jpg",
       "spec": "Tecno Spark 40, 6.67\", 4GB RAM/128GB ROM, 5200mAH...",
       "price": "175,999"
+    },
+    {
+      "id": 5,
+      "image": "images/phone-images/itel-s23.jpg",
+      "spec": "Itel S23, 6.52\", 2GB RAM/32GB ROM, 5000mAH, Dual SIM...",
+      "price": "49,000"
+    },
+    {
+      "id": 6,
+      "image": "images/phone-images/infinix-hot-20.jpg",
+      "spec": "Infinix Hot 20 Play, 6.82\", 4GB RAM/128GB ROM, 6000mAH...",
+      "price": "120,000"
+    },
+    {
+      "id": 7,
+      "image": "images/phone-images/tecno-spark-9t.jpg",
+      "spec": "Tecno Spark 9T, 6.6\", 4GB RAM/128GB ROM, 5000mAH...",
+      "price": "150,000"
+    },
+    {
+      "id": 8,
+      "image": "images/phone-images/samsung-galaxy-a14.jpg",
+      "spec": "Samsung Galaxy A14 - 6.6\" - 128GB ROM - 4GB RAM - Android...",
+      "price": "150,000"
+    },
+    {
+      "id": 9,
+      "image": "images/phone-images/itel-s23.jpg",
+      "spec": "Itel S23, 6.52\", 2GB RAM/32GB ROM, 5000mAH, Dual SIM...",
+      "price": "49,000"
+    },
+    {
+      "id": 10,
+      "image": "images/phone-images/infinix-hot-20.jpg",
+      "spec": "Infinix Hot 20 Play, 6.82\", 4GB RAM/128GB ROM, 6000mAH...",
+      "price": "120,000"
+    },
+    {
+      "id": 11,
+      "image": "images/phone-images/tecno-spark-9t.jpg",
+      "spec": "Tecno Spark 9T, 6.6\", 4GB RAM/128GB ROM, 5000mAH...",
+      "price": "150,000"
+    },
+    {
+      "id": 12,
+      "image": "images/phone-images/samsung-galaxy-a14.jpg",
+      "spec": "Samsung Galaxy A14 - 6.6\" - 128GB ROM - 4GB RAM - Android...",
+      "price": "150,000"
+    },
+    {
+      "id": 13,
+      "image": "images/phone-images/tecno-spark-40.jpg",
+      "spec": "Tecno Spark 40, 6.67\", 4GB RAM/128GB ROM, 5200mAH...",
+      "price": "175,999"
+    },
+    {
+      "id": 14,
+      "image": "images/phone-images/itel-s23.jpg",
+      "spec": "Itel S23, 6.52\", 2GB RAM/32GB ROM, 5000mAH, Dual SIM...",
+      "price": "49,000"
+    },
+    {
+      "id": 15,
+      "image": "images/phone-images/infinix-hot-20.jpg",
+      "spec": "Infinix Hot 20 Play, 6.82\", 4GB RAM/128GB ROM, 6000mAH...",
+      "price": "120,000"
+    },
+    {
+      "id": 16,
+      "image": "images/phone-images/tecno-spark-9t.jpg",
+      "spec": "Tecno Spark 9T, 6.6\", 4GB RAM/128GB ROM, 5000mAH...",
+      "price": "150,000"
     }
   ],
   "appliances": [
@@ -49,28 +121,221 @@
       "image": "images/appliances-images/microwave-oven.jpg",
       "spec": "Hisense 20 Litres Manual Microwave Oven (H20MOMS14) - Silver",
       "price": "150,000"
+    },
+    {
+      "id": 5,
+      "image": "images/appliances-images/samsung-air-conditioner.jpg",
+      "spec": "Samsung 1.5HP Air Conditioner - AR12TYHYCWK - White",
+      "price": "450,000"
+    },
+    {
+      "id": 6,
+      "image": "images/appliances-images/refrigerator.jpg",
+      "spec": "Nexus 50 Litres Bedside Refrigerator (NX-65) - Silver",
+      "price": "99,000"
+    },
+    {
+      "id": 7,
+      "image": "images/appliances-images/washing-machine.jpg",
+      "spec": "Haier Thermocool 6kg Top load Semi Automatic Washing Machine...",
+      "price": "218,400"
+    },
+    {
+      "id": 8,
+      "image": "images/appliances-images/microwave-oven.jpg",
+      "spec": "Hisense 20 Litres Manual Microwave Oven (H20MOMS14) - Silver",
+      "price": "150,000"
+    },
+    {
+      "id": 9,
+      "image": "images/appliances-images/samsung-air-conditioner.jpg",
+      "spec": "Samsung 1.5HP Air Conditioner - AR12TYHYCWK - White",
+      "price": "450,000"
+    },
+    {
+      "id": 10,
+      "image": "images/appliances-images/refrigerator.jpg",
+      "spec": "Nexus 50 Litres Bedside Refrigerator (NX-65) - Silver",
+      "price": "99,000"
+    },
+    {
+      "id": 11,
+      "image": "images/appliances-images/washing-machine.jpg",
+      "spec": "Haier Thermocool 6kg Top load Semi Automatic Washing Machine...",
+      "price": "218,400"
+    },
+    {
+      "id": 12,
+      "image": "images/appliances-images/microwave-oven.jpg",
+      "spec": "Hisense 20 Litres Manual Microwave Oven (H20MOMS14) - Silver",
+      "price": "150,000"
+    },
+    {
+      "id": 13,
+      "image": "images/appliances-images/samsung-air-conditioner.jpg",
+      "spec": "Samsung 1.5HP Air Conditioner - AR12TYHYCWK - White",
+      "price": "450,000"
+    },
+    {
+      "id": 14,
+      "image": "images/appliances-images/refrigerator.jpg",
+      "spec": "Nexus 50 Litres Bedside Refrigerator (NX-65) - Silver",
+      "price": "99,000"
+    },
+    {
+      "id": 15,
+      "image": "images/appliances-images/washing-machine.jpg",
+      "spec": "Haier Thermocool 6kg Top load Semi Automatic Washing Machine...",
+      "price": "218,400"
+    },
+    {
+      "id": 16,
+      "image": "images/appliances-images/microwave-oven.jpg",
+      "spec": "Hisense 20 Litres Manual Microwave Oven (H20MOMS14) - Silver",
+      "price": "150,000"
+    },
+    {
+      "id": 17,
+      "image": "images/appliances-images/samsung-air-conditioner.jpg",
+      "spec": "Samsung 1.5HP Air Conditioner - AR12TYHYCWK - White",
+      "price": "450,000"
+    },
+    {
+      "id": 18,
+      "image": "images/appliances-images/refrigerator.jpg",
+      "spec": "Nexus 50 Litres Bedside Refrigerator (NX-65) - Silver",
+      "price": "99,000"
+    },
+    {
+      "id": 19,
+      "image": "images/appliances-images/washing-machine.jpg",
+      "spec": "Haier Thermocool 6kg Top load Semi Automatic Washing Machine...",
+      "price": "218,400"
+    },
+    {
+      "id": 20,
+      "image": "images/appliances-images/microwave-oven.jpg",
+      "spec": "Hisense 20 Litres Manual Microwave Oven (H20MOMS14) - Silver",
+      "price": "150,000"
     }
-  ], "fashions": [
+  ],
+  "fashions": [
     {
       "id": 1,
       "image": "images/fashion-images/casual-shirt.jpg",
       "spec": "PABANI Blue Micro-Check Formal Cotton Shirt",
       "price": "74,000"
-    }, 
+    },
     {
       "id": 2,
       "image": "images/fashion-images/denim-jeans.jpg",
       "spec": "Jaop Iver Dennis Demin Jacket-Black",
       "price": "44,000"
-    }, 
+    },
     {
       "id": 3,
       "image": "images/fashion-images/running-sneakers.jpg",
       "spec": "GALUIN 2024 Mens Casual Board Shoes Running Sneakers - Black",
       "price": "11,000"
-    }, 
+    },
     {
       "id": 4,
+      "image": "images/fashion-images/leather-jacket.jpg",
+      "spec": "Men's Big Size Windproof Leather Jacket-Black",
+      "price": "17,000"
+    },
+    {
+      "id": 5,
+      "image": "images/fashion-images/casual-shirt.jpg",
+      "spec": "PABANI Blue Micro-Check Formal Cotton Shirt",
+      "price": "74,000"
+    },
+    {
+      "id": 6,
+      "image": "images/fashion-images/denim-jeans.jpg",
+      "spec": "Jaop Iver Dennis Demin Jacket-Black",
+      "price": "44,000"
+    },
+    {
+      "id": 7,
+      "image": "images/fashion-images/running-sneakers.jpg",
+      "spec": "GALUIN 2024 Mens Casual Board Shoes Running Sneakers - Black",
+      "price": "11,000"
+    },
+    {
+      "id": 8,
+      "image": "images/fashion-images/leather-jacket.jpg",
+      "spec": "Men's Big Size Windproof Leather Jacket-Black",
+      "price": "17,000"
+    },
+    {
+      "id": 9,
+      "image": "images/fashion-images/casual-shirt.jpg",
+      "spec": "PABANI Blue Micro-Check Formal Cotton Shirt",
+      "price": "74,000"
+    },
+    {
+      "id": 10,
+      "image": "images/fashion-images/denim-jeans.jpg",
+      "spec": "Jaop Iver Dennis Demin Jacket-Black",
+      "price": "44,000"
+    },
+    {
+      "id": 11,
+      "image": "images/fashion-images/running-sneakers.jpg",
+      "spec": "GALUIN 2024 Mens Casual Board Shoes Running Sneakers - Black",
+      "price": "11,000"
+    },
+    {
+      "id": 12,
+      "image": "images/fashion-images/leather-jacket.jpg",
+      "spec": "Men's Big Size Windproof Leather Jacket-Black",
+      "price": "17,000"
+    },
+    {
+      "id": 13,
+      "image": "images/fashion-images/casual-shirt.jpg",
+      "spec": "PABANI Blue Micro-Check Formal Cotton Shirt",
+      "price": "74,000"
+    },
+    {
+      "id": 14,
+      "image": "images/fashion-images/denim-jeans.jpg",
+      "spec": "Jaop Iver Dennis Demin Jacket-Black",
+      "price": "44,000"
+    },
+    {
+      "id": 15,
+      "image": "images/fashion-images/running-sneakers.jpg",
+      "spec": "GALUIN 2024 Mens Casual Board Shoes Running Sneakers - Black",
+      "price": "11,000"
+    },
+    {
+      "id": 16,
+      "image": "images/fashion-images/leather-jacket.jpg",
+      "spec": "Men's Big Size Windproof Leather Jacket-Black",
+      "price": "17,000"
+    },
+    {
+      "id": 17,
+      "image": "images/fashion-images/casual-shirt.jpg",
+      "spec": "PABANI Blue Micro-Check Formal Cotton Shirt",
+      "price": "74,000"
+    },
+    {
+      "id": 18,
+      "image": "images/fashion-images/denim-jeans.jpg",
+      "spec": "Jaop Iver Dennis Demin Jacket-Black",
+      "price": "44,000"
+    },
+    {
+      "id": 19,
+      "image": "images/fashion-images/running-sneakers.jpg",
+      "spec": "GALUIN 2024 Mens Casual Board Shoes Running Sneakers - Black",
+      "price": "11,000"
+    },
+    {
+      "id": 20,
       "image": "images/fashion-images/leather-jacket.jpg",
       "spec": "Men's Big Size Windproof Leather Jacket-Black",
       "price": "17,000"
