@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import gsap from "gsap";
 import Footer from "../../components/Footer";
+import Header from "../../components/Header";
 
 const Fashions = () => {
   const [fashion, setFashion] = useState([]);
@@ -56,14 +57,15 @@ const Fashions = () => {
 
   return (
     <div>
+      <Header />
       <div
         ref={gridRef}
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 mt-15"
       >
         {fashion.map((item) => (
           <div
             key={item.id}
-            className="product-card p-4 m-2 rounded text-black hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+            className="product-card group p-4 m-2 rounded text-black hover:shadow-lg transition-shadow duration-300 cursor-pointer"
           >
             <img
               src={item.image}
@@ -72,6 +74,9 @@ const Fashions = () => {
             />
             <h3 className="text-sm text-gray-600">{item.spec}</h3>
             <p className="text-lg font-semibold">₦ {item.price}</p>
+            <button className="w-full mt-2 bg-blue-500 text-white py-1 px-3 rounded hover:bg-blue-600 transition-all duration-300 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto cursor-pointer">
+              Add to Cart
+            </button>
           </div>
         ))}
       </div>

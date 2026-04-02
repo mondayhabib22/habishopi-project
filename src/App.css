@@ -1,0 +1,31 @@
+/* Swiper custom styles with Tailwind */
+.swiper-button-next,
+.swiper-button-prev {
+  @apply bg-blue-500/80 w-10 h-10 rounded-full text-white flex items-center justify-center transition-all duration-300;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  @apply bg-blue-600;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  @apply text-xl;
+}
+
+.swiper-pagination-bullet {
+  @apply bg-white/50 w-2 h-2;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-blue-500;
+}
+
+.swiper-wrapper {
+  @apply flex items-stretch;
+}
+
+.swiper-slide {
+  @apply flex items-center p-0;
+}
