@@ -6,6 +6,7 @@ import Cart from "./pages/cart-page/Cart";
 import Phones from "./pages/phones-page/Phones";
 import Appliances from "./pages/appliances-page/Appliances";
 import Fashions from "./pages/fashions-page/Fashions";
+import Signup from "./pages/signup-page/Signup";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Route path="phones" element={<Phones />} />
       <Route path="appliances" element={<Appliances />} />
       <Route path="fashions" element={<Fashions />} />
+      <Route path="signup" element={<Signup />} />
     </Routes>
   );
 };
