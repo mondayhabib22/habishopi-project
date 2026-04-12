@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { Link } from "react-router";
+import Input from "../../components/Input";
 
 function Login() {
   const containerRef = useRef(null);
@@ -29,21 +30,9 @@ function Login() {
           </h3>
 
           <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            className="border border-gray-300 rounded py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
+          <Input type="email" id="email" name="email" />
           <label htmlFor="password">Password:</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            required
-            className="border border-gray-300 rounded py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
+          <Input type="password" id="password" name="password" />
           <button
             type="submit"
             className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 cursor-pointer transition-colors duration-300"
