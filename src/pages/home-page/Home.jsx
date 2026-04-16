@@ -16,21 +16,22 @@ function Home() {
   const [appliances, setAppliances] = useState([]);
   const [fashions, setFashions] = useState([]);
 
+  const products = { phones: phone, appliances, fashions };
   const gridRef = useRef(null);
 
   useEffect(() => {
-    const fetchPhones = async () => {
-      let response = await axios.get("http://localhost:3001/phones");
-      setPhone(response.data);
-
-      response = await axios.get("http://localhost:3001/appliances");
-      setAppliances(response.data);
-
-      response = await axios.get("http://localhost:3001/fashions");
-      setFashions(response.data);
+    const fetchData = async () => {
+      try {
+        const { data } = await axios.get("http://localhost:3001/products");
+        setPhone(data.phones);
+        setAppliances(data.appliances);
+        setFashions(data.fashions);
+      } catch (error) {
+        console.log(error);
+      }
     };
 
-    fetchPhones();
+    fetchData();
   }, []);
 
   useEffect(() => {
@@ -70,114 +71,48 @@ function Home() {
       <Header />
       <Hero />
       <div ref={gridRef} className="mx-auto px-4 text-white mb-8">
-        <div className="shadow-2xl rounded mt-8">
-          <div className="flex items-center justify-between bg-gray-700 p-4 rounded">
-            <span className="font-bold">Phones</span>
-            <Link to="/phones" className="font-bold">
-              See All&gt;
-            </Link>
-          </div>
+        {Object.entries(products).map(([key, value]) => {
+          return (
+            <div className="shadow-2xl rounded mt-8" key={key}>
+              <div className="flex items-center justify-between bg-gray-700 p-4 rounded">
+                <span className="font-bold">{key}</span>
+                <Link to={`/products?category=${key}`} className="font-bold">
+                  See All&gt;
+                </Link>
+              </div>
 
-          <Swiper
-            modules={[Navigation, Pagination]}
-            navigation
-            pagination={{ clickable: true }}
-            spaceBetween={16}
-            breakpoints={{
-              320: { slidesPerView: 2 },
-              640: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
-              1280: { slidesPerView: 4 },
-            }}
-            className="p-4"
-          >
-            {phone.slice(0, 6).map((item) => (
-              <SwiperSlide key={item.id}>
-                <div className="product-card p-2 sm:p-3 m-1 rounded text-black hover:shadow-lg transition-shadow duration-300 cursor-pointer">
-                  <img
-                    src={item.image}
-                    alt={item.spec}
-                    className="w-full object-cover rounded"
-                  />
-                  <h3 className="text-sm text-gray-600">{item.spec}</h3>
-                  <p className="text-lg font-semibold">₦ {item.price}</p>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-        <div className="shadow-2xl rounded mt-8">
-          <div className="flex items-center justify-between bg-gray-700 p-4 rounded">
-            <span className="font-bold">Appliances</span>
-            <Link to="/appliances" className="font-bold">
-              See All&gt;
-            </Link>
-          </div>
-
-          <Swiper
-            modules={[Navigation, Pagination]}
-            navigation
-            pagination={{ clickable: true }}
-            spaceBetween={16}
-            breakpoints={{
-              320: { slidesPerView: 2 },
-              640: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
-              1280: { slidesPerView: 4 },
-            }}
-            className="p-4"
-          >
-            {appliances.slice(0, 6).map((item) => (
-              <SwiperSlide key={item.id}>
-                <div className="w-full product-card p-2 sm:p-3 m-1 rounded text-black hover:shadow-lg transition-shadow duration-300 cursor-pointer">
-                  <img
-                    src={item.image}
-                    alt={item.spec}
-                    className="w-full object-cover rounded"
-                  />
-                  <h3 className="text-sm text-gray-600">{item.spec}</h3>
-                  <p className="text-lg font-semibold">₦ {item.price}</p>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-        <div className="shadow-2xl rounded mt-8">
-          <div className="flex items-center justify-between bg-gray-700 p-4 rounded">
-            <span className="font-bold">Fashions</span>
-            <Link to="/fashions" className="font-bold">
-              See All&gt;
-            </Link>
-          </div>
-
-          <Swiper
-            modules={[Navigation, Pagination]}
-            navigation
-            pagination={{ clickable: true }}
-            spaceBetween={16}
-            breakpoints={{
-              320: { slidesPerView: 2 },
-              640: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
-              1280: { slidesPerView: 4 },
-            }}
-            className="p-4"
-          >
-            {fashions.slice(0, 6).map((item) => (
-              <SwiperSlide key={item.id}>
-                <div className="product-card p-2 sm:p-3 m-1 rounded text-black hover:shadow-lg transition-shadow duration-300 cursor-pointer">
-                  <img
-                    src={item.image}
-                    alt={item.spec}
-                    className="w-full object-cover rounded"
-                  />
-                  <h3 className="text-sm text-gray-600">{item.spec}</h3>
-                  <p className="text-lg font-semibold">₦ {item.price}</p>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+              <Swiper
+                modules={[Navigation, Pagination]}
+                navigation
+                pagination={{ clickable: true }}
+                spaceBetween={16}
+                breakpoints={{
+                  320: { slidesPerView: 2 },
+                  640: { slidesPerView: 2 },
+                  1024: { slidesPerView: 3 },
+                  1280: { slidesPerView: 4 },
+                }}
+                className="p-4"
+              >
+                {value.slice(0, 6).map((item) => (
+                  <SwiperSlide key={item.id}>
+                    <div className="product-card p-2 sm:p-3 m-1 rounded text-black hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                      <img
+                        src={item.image}
+                        alt={item.spec}
+                        className="w-full object-cover rounded"
+                      />
+                      <h3 className="text-sm text-gray-600">{item.spec}</h3>
+                      <p className="text-lg font-semibold">
+                        ₦ {item.price.toLocaleString()}
+                      </p>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          );
+        })}
       </div>
       <Footer />
     </div>
