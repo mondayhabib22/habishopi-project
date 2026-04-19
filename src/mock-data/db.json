@@ -867,5 +867,16 @@
         "price": 17000
       }
     ]
-  }
+  },
+  "cart": [
+    {
+      "productId": 7,
+      "quantity": 2,
+      "name": "Tecno Spark 30 Pro 6.78\" 8GB RAM/128GB ROM, Dual Sim, Android 14 - Obsidian Edge",
+      "price": 170000,
+      "image": "images/phone-images/tecno-spark-30.jpg",
+      "id": "DvmClJkiuAc"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

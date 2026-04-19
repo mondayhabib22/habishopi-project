@@ -1,12 +1,15 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import { useCart } from "../../contexts/CartContext";
 
 const Details = () => {
   const { category, id } = useParams();
   const [product, setProduct] = useState(null);
+  const { addToCart } = useCart();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -80,7 +83,13 @@ const Details = () => {
                 </p>
               </div>
 
-              <button className="w-full bg-blue-600 cursor-pointer hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center text-sm">
+              <button
+                onClick={() => {
+                  addToCart(product);
+                  navigate("/cart");
+                }}
+                className="w-full bg-blue-600 cursor-pointer hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center text-sm"
+              >
                 <svg
                   className="w-4 h-4 mr-2"
                   fill="none"
@@ -99,18 +108,16 @@ const Details = () => {
             </div>
           </div>
           <div className="">
+            <div className="mb-6">
+              <h2 className="text-lg font-semibold text-gray-900 mb-2">
+                Product details
+              </h2>
+              <p className="text-gray-700 leading-relaxed text-sm">
+                {product.description}
+              </p>
+            </div>
 
-          <div className="mb-6">
-            <h2 className="text-lg font-semibold text-gray-900 mb-2">
-              Product details
-            </h2>
-            <p className="text-gray-700 leading-relaxed text-sm">
-              {product.description}
-            </p>
-          </div>
-
-          <div className="mb-6">
-          </div>
+            <div className="mb-6"></div>
             <h2 className="text-lg font-semibold text-gray-900 mb-3">
               Full Specifications
             </h2>

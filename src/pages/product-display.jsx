@@ -3,15 +3,18 @@ import { useEffect, useState, useRef } from "react";
 import gsap from "gsap";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import { Link, useSearchParams } from "react-router-dom";
+import { Link, useSearchParams, useNavigate } from "react-router-dom";
+import { useCart } from "../contexts/CartContext";
 
 const ProductDispay = () => {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
 
   const category = searchParams.get("category");
   const search = searchParams.get("search");
   const [products, setProducts] = useState([]);
   const gridRef = useRef(null);
+  const { addToCart } = useCart();
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (!category && !search) return;
@@ -106,7 +109,14 @@ const ProductDispay = () => {
             <p className="text-lg font-semibold">
               ₦ {item.price.toLocaleString()}
             </p>
-            <button className="w-full mt-2 bg-blue-500 text-white py-1 px-3 rounded hover:bg-blue-600 transition-all duration-300 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto cursor-pointer">
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                addToCart(item);
+                navigate("/cart");
+              }}
+              className="w-full mt-2 bg-blue-500 text-white py-1 px-3 rounded hover:bg-blue-600 transition-all duration-300 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto cursor-pointer"
+            >
               Add to Cart
             </button>
           </Link>

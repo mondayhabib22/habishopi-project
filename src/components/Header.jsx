@@ -1,9 +1,15 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { useCart } from "../contexts/CartContext";
 
 const Header = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
+  const { cartItems } = useCart();
+  const cartCount = cartItems.reduce(
+    (sum, item) => sum + (item.quantity || 0),
+    0,
+  );
 
   const handleSearch = () => {
     if (searchTerm.trim()) {
@@ -63,7 +69,7 @@ const Header = () => {
             </Link>
             <Link
               to="/cart"
-              className="hover:text-cyan-300 flex items-center gap-1 transition cursor-pointer text-sm"
+              className="hover:text-cyan-300 flex items-center gap-1 transition cursor-pointer text-sm relative"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -79,6 +85,11 @@ const Header = () => {
                   d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1.5 6h13M9 21a1 1 0 100-2 1 1 0 000 2zm10 0a1 1 0 100-2 1 1 0 000 2z"
                 />
               </svg>
+              {cartCount > 0 && (
+                <span className="absolute -right-2 -top-2 inline-flex h-5 min-w-[1.25rem] items-center justify-center rounded-full bg-red-500 px-1.5 text-[0.65rem] font-bold text-white">
+                  {cartCount}
+                </span>
+              )}
             </Link>
           </div>
 
@@ -136,7 +147,7 @@ const Header = () => {
               </Link>
               <Link
                 to="/cart"
-                className="hover:text-cyan-300 flex items-center gap-2 transition cursor-pointer"
+                className="hover:text-cyan-300 flex items-center gap-2 transition cursor-pointer relative"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -153,6 +164,11 @@ const Header = () => {
                   />
                 </svg>
                 Cart
+                {cartCount > 0 && (
+                  <span className="absolute -right-3 -top-2 inline-flex h-5 min-w-[1.25rem] items-center justify-center rounded-full bg-red-500 px-1.5 text-[0.65rem] font-bold text-white">
+                    {cartCount}
+                  </span>
+                )}
               </Link>
             </nav>
           </div>
