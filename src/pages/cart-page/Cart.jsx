@@ -51,19 +51,19 @@ function Cart() {
                       />
                       <h3 className="text-lg font-semibold">{item.name}</h3>
                     </div>
-                    <div className="flex flex-col gap-2">
+                    <div className="flex justify-between items-center mt-2">
                       <button
                         onClick={() => removeFromCart(item.id)}
                         className="text-red-500 hover:text-red-700 cursor-pointer text-sm font-semibold"
                       >
                         Remove
                       </button>
-                      <div className="inline-flex items-center rounded-full border border-gray-200 overflow-hidden">
+                      <div className="inline-flex items-center rounded-full overflow-hidden">
                         <button
                           onClick={() =>
                             updateCartItemQuantity(item.id, item.quantity - 1)
                           }
-                          className="px-3 py-1 bg-gray-100 text-gray-700 hover:bg-gray-200 transition"
+                          className="px-3 py-1 bg-gray-300 text-gray-700 hover:bg-gray-200 transition"
                         >
                           -
                         </button>
