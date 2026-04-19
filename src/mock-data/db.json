@@ -20,14 +20,14 @@
       {
         "id": 2,
         "category": "phones",
-        "image": "images/phone-images/samsung.avif",
-        "spec": "Samsung Galaxy S23 Plus 5G - 6.6\" - 256GB ROM - 8GB RAM...",
-        "description": "The Samsung Galaxy S23 Plus is a premium smartphone that features a stunning 6.6-inch Dynamic AMOLED display, providing an immersive visual experience. With a powerful Snapdragon 8 Gen 2 processor and 8GB of RAM, it delivers exceptional performance for gaming, multitasking, and demanding applications. The device features a versatile camera system with advanced computational photography capabilities, allowing users to capture stunning photos and videos. Running on Android, the Galaxy S23 Plus offers a seamless and intuitive user experience, along with access to a vast ecosystem of apps and services.",
+        "image": "images/phone-images/samsung-s26.jpg",
+        "spec": "Samsung Galaxy S26 Ultra - 6.9\" (16GB RAM, 1TB ROM) Android...",
+        "description": "The Samsung Galaxy S26 Ultra is a flagship smartphone that features a stunning 6.9-inch Dynamic AMOLED display, providing an immersive visual experience. With a powerful Snapdragon 8 Gen 2 processor and 16GB of RAM, it delivers exceptional performance for gaming, multitasking, and demanding applications. The device features a versatile camera system with advanced computational photography capabilities, allowing users to capture stunning photos and videos. Running on Android, the Galaxy S26 Ultra offers a seamless and intuitive user experience, along with access to a vast ecosystem of apps and services.",
         "fullSpecs": {
-          "Display": "6.6-inch Dynamic AMOLED display",
+          "Display": "6.9-inch Dynamic AMOLED display",
           "Processor": "Snapdragon 8 Gen 2",
-          "RAM": "8GB",
-          "Storage": "256GB",
+          "RAM": "16GB",
+          "Storage": "1TB",
           "Operating System": "Android",
           "Camera": "Versatile camera system with advanced computational photography capabilities"
         },
@@ -68,121 +68,121 @@
       {
         "id": 5,
         "category": "phones",
-        "image": "images/phone-images/itel-s23.jpg",
-        "spec": "Itel S23, 6.52\", 2GB RAM/32GB ROM, 5000mAH, Dual SIM...",
-        "description": "The Itel S23 is a mid-range smartphone that features a stunning 6.52-inch HD+ display, providing a good visual experience. With a powerful Helio G90T processor and 2GB of RAM, it delivers decent performance for everyday tasks and light gaming. The device features a simple camera system, allowing users to capture basic photos and videos. Running on Android, the S23 offers a straightforward user experience, along with access to a wide range of apps and services.",
+        "image": "images/phone-images/tecno-camon-40.jpg",
+        "spec": "Tecno CAMON 40 Pro - 6.78\" (256GB/8+8GB) 4G Dual SIM, 5200mAh GREEN",
+        "description": "The Tecno CAMON 40 Pro is a mid-range smartphone that features a stunning 6.78-inch HD+ display, providing a good visual experience. With a powerful Helio G90T processor and 8GB of RAM, it delivers decent performance for everyday tasks and light gaming. The device features a simple camera system, allowing users to capture basic photos and videos. Running on Android, the CAMON 40 Pro offers a straightforward user experience, along with access to a wide range of apps and services.",
         "fullSpecs": {
-          "Display": "6.52-inch HD+ display",
+          "Display": "6.78-inch HD+ display",
           "Processor": "Helio G90T processor",
-          "RAM": "2GB",
-          "Storage": "32GB",
+          "RAM": "8GB",
+          "Storage": "256GB",
           "Operating System": "Android",
           "Camera": "Simple camera system"
         },
-        "price": 49000
+        "price": 490000
       },
       {
         "id": 6,
         "category": "phones",
-        "image": "images/phone-images/infinix-hot-20.jpg",
-        "spec": "Infinix Hot 20 Play, 6.82\", 4GB RAM/128GB ROM, 6000mAH...",
-        "description": "The Infinix Hot 20 Play is a mid-range smartphone that features a stunning 6.82-inch HD+ display, providing a good visual experience. With a powerful Helio G90T processor and 4GB of RAM, it delivers decent performance for everyday tasks and light gaming. The device features a simple camera system, allowing users to capture basic photos and videos. Running on Android, the Hot 20 Play offers a straightforward user experience, along with access to a wide range of apps and services.",
+        "image": "images/phone-images/infinix.jpg",
+        "spec": "Infinix Hot 60 Pro+ 6.78\" 8GB RAM/128GB ROM Android 15",
+        "description": "The Infinix Hot 60 Pro+ is a mid-range smartphone that features a stunning 6.78-inch HD+ display, providing a good visual experience. With a powerful Snapdragon 888 processor and 8GB of RAM, it delivers decent performance for everyday tasks and light gaming. The device features a simple camera system, allowing users to capture basic photos and videos. Running on Android, the Hot 60 Pro+ offers a straightforward user experience, along with access to a wide range of apps and services.",
         "fullSpecs": {
-          "Display": "6.82-inch HD+ display",
-          "Processor": "Helio G90T processor",
-          "RAM": "4GB",
+          "Display": "6.78-inch HD+ display",
+          "Processor": "Snapdragon 888 processor",
+          "RAM": "8GB",
           "Storage": "128GB",
           "Operating System": "Android",
           "Camera": "Simple camera system"
         },
-        "price": 120000
+        "price": 360000
       },
       {
         "id": 7,
         "category": "phones",
-        "image": "images/phone-images/tecno-spark-9t.jpg",
-        "spec": "Tecno Spark 9T, 6.6\", 4GB RAM/128GB ROM, 5000mAH...",
-        "description": "The Tecno Spark 9T is a mid-range smartphone that features a stunning 6.6-inch HD+ display, providing a good visual experience. With a powerful Helio G90T processor and 4GB of RAM, it delivers decent performance for everyday tasks and light gaming. The device features a simple camera system, allowing users to capture basic photos and videos. Running on Android, the Spark 9T offers a straightforward user experience, along with access to a wide range of apps and services.",
+        "image": "images/phone-images/tecno-spark-30.jpg",
+        "spec": "Tecno Spark 30 Pro 6.78\" 8GB RAM/128GB ROM, Dual Sim, Android 14 - Obsidian Edge",
+        "description": "The Tecno Spark 30 Pro is a mid-range smartphone that features a stunning 6.78-inch HD+ display, providing a good visual experience. With a powerful Helio G90T processor and 8GB of RAM, it delivers decent performance for everyday tasks and light gaming. The device features a simple camera system, allowing users to capture basic photos and videos. Running on Android, the Spark 30 Pro offers a straightforward user experience, along with access to a wide range of apps and services.",
         "fullSpecs": {
-          "Display": "6.6-inch HD+ display",
+          "Display": "6.78-inch HD+ display",
           "Processor": "Helio G90T processor",
-          "RAM": "4GB",
+          "RAM": "8GB",
           "Storage": "128GB",
           "Operating System": "Android",
           "Camera": "Simple camera system"
         },
-        "price": 150000
+        "price": 170000
       },
       {
         "id": 8,
         "category": "phones",
-        "image": "images/phone-images/samsung-galaxy-a14.jpg",
-        "spec": "Samsung Galaxy A14 - 6.6\" - 128GB ROM - 4GB RAM - Android...",
-        "description": "The Samsung Galaxy A14 is a mid-range smartphone that features a stunning 6.6-inch HD+ display, providing a good visual experience. With a powerful Exynos 1380 processor and 4GB of RAM, it delivers decent performance for everyday tasks and light gaming. The device features a simple camera system, allowing users to capture basic photos and videos. Running on Android, the Galaxy A14 offers a straightforward user experience, along with access to a wide range of apps and services.",
+        "image": "images/phone-images/itel-super-26.jpg",
+        "spec": "itel SUPER 26 Ultra 6.78\" Curved AMOLED, 128GB + 8GB RAM, 50MP, 6000mAh",
+        "description": "The itel SUPER 26 Ultra is a mid-range smartphone that features a stunning 6.78-inch Curved AMOLED display, providing a good visual experience. With a powerful Snapdragon 888 processor and 8GB of RAM, it delivers decent performance for everyday tasks and light gaming. The device features a versatile camera system, allowing users to capture basic photos and videos. Running on Android, the SUPER 26 Ultra offers a straightforward user experience, along with access to a wide range of apps and services.",
         "fullSpecs": {
-          "Display": "6.6-inch HD+ display",
-          "Processor": "Exynos 1380 processor",
-          "RAM": "4GB",
+          "Display": "6.78-inch Curved AMOLED display",
+          "Processor": "Snapdragon 888 processor",
+          "RAM": "8GB",
           "Storage": "128GB",
           "Operating System": "Android",
           "Camera": "Simple camera system"
         },
-        "price": 150000
+        "price": 256900
       },
       {
         "id": 9,
         "category": "phones",
-        "image": "images/phone-images/itel-s23.jpg",
-        "spec": "Itel S23, 6.52\", 2GB RAM/32GB ROM, 5000mAH, Dual SIM...",
-        "description": "The Itel S23 is a mid-range smartphone that features a stunning 6.52-inch HD+ display, providing a good visual experience. With a powerful Helio G90T processor and 2GB of RAM, it delivers decent performance for everyday tasks and light gaming. The device features a simple camera system, allowing users to capture basic photos and videos. Running on Android, the S23 offers a straightforward user experience, along with access to a wide range of apps and services.",
+        "image": "images/phone-images/iphone-12.jpg",
+        "spec": "Apple IPhone 12 Pro Max - 6.7-Inch - 128GB ROM, 6GB RAM - IOS 14",
+        "description": "The Apple IPhone 12 Pro Max is a premium smartphone that features a stunning 6.7-inch Super Retina XDR display, providing an immersive visual experience. With a powerful A14 Bionic chip and 6GB of RAM, it delivers exceptional performance for gaming, multitasking, and demanding applications. The device features a versatile camera system with advanced computational photography capabilities, allowing users to capture stunning photos and videos. Running on iOS 14, the iPhone 12 Pro Max offers a seamless and intuitive user experience, along with access to a vast ecosystem of apps and services.",
         "fullSpecs": {
-          "Display": "6.52-inch HD+ display",
-          "Processor": "Helio G90T processor",
-          "RAM": "2GB",
-          "Storage": "32GB",
-          "Operating System": "Android",
+          "Display": "6.7-inch Super Retina XDR display",
+          "Processor": "A14 Bionic processor",
+          "RAM": "6GB",
+          "Storage": "128GB",
+          "Operating System": "iOS",
           "Camera": "Simple camera system"
         },
-        "price": 49000
+        "price": 670000
       },
       {
         "id": 10,
         "category": "phones",
-        "image": "images/phone-images/infinix-hot-20.jpg",
-        "spec": "Infinix Hot 20 Play, 6.82\", 4GB RAM/128GB ROM, 6000mAH...",
-        "description": "The Infinix Hot 20 Play is a mid-range smartphone that features a stunning 6.82-inch HD+ display, providing a good visual experience. With a powerful Helio G90T processor and 4GB of RAM, it delivers decent performance for everyday tasks and light gaming. The device features a simple camera system, allowing users to capture basic photos and videos. Running on Android, the Hot 20 Play offers a straightforward user experience, along with access to a wide range of apps and services.",
+        "image": "images/phone-images/samsung-s10.jpg",
+        "spec": "Samsung Galaxy S10 Plus (S10+) 6.4-Inch AMOLED (8GB, 128GB...",
+        "description": "The Samsung Galaxy S10 Plus is a premium smartphone that features a stunning 6.4-inch AMOLED display, providing an exceptional visual experience. With a powerful Exynos 9820 processor and 8GB of RAM, it delivers outstanding performance for demanding tasks and immersive gaming. The device features a advanced camera system, allowing users to capture stunning photos and videos. Running on Android, the S10 Plus offers a seamless user experience, along with access to a wide range of apps and services.",
         "fullSpecs": {
-          "Display": "6.82-inch HD+ display",
-          "Processor": "Helio G90T processor",
-          "RAM": "4GB",
+          "Display": "6.4-inch AMOLED display",
+          "Processor": "Exynos 9820 processor",
+          "RAM": "8GB",
           "Storage": "128GB",
           "Operating System": "Android",
-          "Camera": "Simple camera system"
+          "Camera": "Advanced camera system"
         },
-        "price": 120000
+        "price": 370000
       },
       {
         "id": 11,
         "category": "phones",
-        "image": "images/phone-images/tecno-spark-9t.jpg",
-        "spec": "Tecno Spark 9T, 6.6\", 4GB RAM/128GB ROM, 5000mAH...",
-        "description": "The Tecno Spark 9T is a mid-range smartphone that features a stunning 6.6-inch HD+ display, providing a good visual experience. With a powerful Helio G90T processor and 4GB of RAM, it delivers decent performance for everyday tasks and light gaming. The device features a simple camera system, allowing users to capture basic photos and videos. Running on Android, the Spark 9T offers a straightforward user experience, along with access to a wide range of apps and services.",
+        "image": "images/phone-images/iphone-16.jpg",
+        "spec": "Apple IPhone 16 Plus 5G - 6.7\" - 128GB ROM - 8GB RAM - Single SIM - Ultramarine",
+        "description": "The Apple IPhone 16 Plus 5G is a premium smartphone that features a stunning 6.7-inch Super Retina XDR display, providing an exceptional visual experience. With a powerful A18 Bionic processor and 8GB of RAM, it delivers outstanding performance for demanding tasks and immersive gaming. The device features a advanced camera system, allowing users to capture stunning photos and videos. Running on iOS, the IPhone 16 Plus offers a seamless user experience, along with access to a wide range of apps and services.",
         "fullSpecs": {
-          "Display": "6.6-inch HD+ display",
-          "Processor": "Helio G90T processor",
-          "RAM": "4GB",
+          "Display": "6.7-inch Super Retina XDR display",
+          "Processor": "A18 Bionic processor",
+          "RAM": "8GB",
           "Storage": "128GB",
-          "Operating System": "Android",
-          "Camera": "Simple camera system"
+          "Operating System": "iOS",
+          "Camera": "Advanced camera system"
         },
-        "price": 150000
+        "price": 3300000
       },
       {
         "id": 12,
         "category": "phones",
-        "image": "images/phone-images/samsung-galaxy-a14.jpg",
-        "spec": "Samsung Galaxy A14 - 6.6\" - 128GB ROM - 4GB RAM - Android...",
-        "description": "The Samsung Galaxy A14 is a mid-range smartphone that features a stunning 6.6-inch HD+ display, providing a good visual experience. With a powerful Exynos 1380 processor and 4GB of RAM, it delivers decent performance for everyday tasks and light gaming. The device features a simple camera system, allowing users to capture basic photos and videos. Running on Android, the Galaxy A14 offers a straightforward user experience, along with access to a wide range of apps and services.",
+        "image": "images/phone-images/samsung-galaxy-a17.jpg",
+        "spec": "Samsung Galaxy A17 - 6.6\" - 128GB ROM - 4GB RAM - Android...",
+        "description": "The Samsung Galaxy A17 is a mid-range smartphone that features a stunning 6.6-inch HD+ display, providing a good visual experience. With a powerful Exynos 1380 processor and 4GB of RAM, it delivers decent performance for everyday tasks and light gaming. The device features a simple camera system, allowing users to capture basic photos and videos. Running on Android, the Galaxy A17 offers a straightforward user experience, along with access to a wide range of apps and services.",
         "fullSpecs": {
           "Display": "6.6-inch HD+ display",
           "Processor": "Exynos 1380 processor",
@@ -212,25 +212,25 @@
       {
         "id": 14,
         "category": "phones",
-        "image": "images/phone-images/itel-s23.jpg",
-        "spec": "Itel S23, 6.52\", 2GB RAM/32GB ROM, 5000mAH, Dual SIM...",
-        "description": "The Itel S23 is a mid-range smartphone that features a stunning 6.52-inch HD+ display, providing a good visual experience. With a powerful Helio G90T processor and 2GB of RAM, it delivers decent performance for everyday tasks and light gaming. The device features a simple camera system, allowing users to capture basic photos and videos. Running on Android, the S23 offers a straightforward user experience, along with access to a wide range of apps and services.",
+        "image": "images/phone-images/itel.jpg",
+        "spec": "itel A100C 6.6\" 2GB RAM/64GB ROM 5000mAh - Titanium Gold",
+        "description": "The Itel A100C is a mid-range smartphone that features a stunning 6.6-inch HD+ display, providing a good visual experience. With a powerful Helio G90T processor and 2GB of RAM, it delivers decent performance for everyday tasks and light gaming. The device features a simple camera system, allowing users to capture basic photos and videos. Running on Android, the A100C offers a straightforward user experience, along with access to a wide range of apps and services.",
         "fullSpecs": {
-          "Display": "6.52-inch HD+ display",
+          "Display": "6.6-inch HD+ display",
           "Processor": "Helio G90T processor",
           "RAM": "2GB",
-          "Storage": "32GB",
+          "Storage": "64GB",
           "Operating System": "Android",
           "Camera": "Simple camera system"
         },
-        "price": 49000
+        "price": 95000
       },
       {
         "id": 15,
         "category": "phones",
-        "image": "images/phone-images/infinix-hot-20.jpg",
-        "spec": "Infinix Hot 20 Play, 6.82\", 4GB RAM/128GB ROM, 6000mAH...",
-        "description": "The Infinix Hot 20 Play is a mid-range smartphone that features a stunning 6.82-inch HD+ display, providing a good visual experience. With a powerful Helio G90T processor and 4GB of RAM, it delivers decent performance for everyday tasks and light gaming. The device features a simple camera system, allowing users to capture basic photos and videos. Running on Android, the Hot 20 Play offers a straightforward user experience, along with access to a wide range of apps and services.",
+        "image": "images/phone-images/infinix-hot-50.jpg",
+        "spec": "Infinix Hot 50, 6.82\", 4GB RAM/128GB ROM, 6000mAH...",
+        "description": "The Infinix Hot 50 is a mid-range smartphone that features a stunning 6.82-inch HD+ display, providing a good visual experience. With a powerful Helio G90T processor and 4GB of RAM, it delivers decent performance for everyday tasks and light gaming. The device features a simple camera system, allowing users to capture basic photos and videos. Running on Android, the Hot 50 offers a straightforward user experience, along with access to a wide range of apps and services.",
         "fullSpecs": {
           "Display": "6.82-inch HD+ display",
           "Processor": "Helio G90T processor",
@@ -239,23 +239,23 @@
           "Operating System": "Android",
           "Camera": "Simple camera system"
         },
-        "price": 120000
+        "price": 350000
       },
       {
         "id": 16,
         "category": "phones",
-        "image": "images/phone-images/tecno-spark-9t.jpg",
-        "spec": "Tecno Spark 9T, 6.6\", 4GB RAM/128GB ROM, 5000mAH...",
-        "description": "The Tecno Spark 9T is a mid-range smartphone that features a stunning 6.6-inch HD+ display, providing a good visual experience. With a powerful Helio G90T processor and 4GB of RAM, it delivers decent performance for everyday tasks and light gaming. The device features a simple camera system, allowing users to capture basic photos and videos. Running on Android, the Spark 9T offers a straightforward user experience, along with access to a wide range of apps and services.",
+        "image": "images/phone-images/iphone-14.jpg",
+        "spec": "Apple iPhone 14 - 6.1\" - 5G - 128GB + 6GB RAM - 1 Sim + eSim",
+        "description": "The Apple iPhone 14 is a premium smartphone that features a stunning 6.1-inch Super Retina XDR display, providing an immersive visual experience. With a powerful A15 Bionic chip and 6GB of RAM, it delivers exceptional performance for demanding tasks and intensive gaming. The device features a dual-camera system, allowing users to capture stunning photos and videos. Running on iOS, the iPhone 14 offers a seamless user experience, along with access to a wide range of apps and services.",
         "fullSpecs": {
-          "Display": "6.6-inch HD+ display",
-          "Processor": "Helio G90T processor",
-          "RAM": "4GB",
+          "Display": "6.1-inch Super Retina XDR display",
+          "Processor": "A15 Bionic chip",
+          "RAM": "6GB",
           "Storage": "128GB",
-          "Operating System": "Android",
-          "Camera": "Simple camera system"
+          "Operating System": "iOS",
+          "Camera": "Dual-camera system"
         },
-        "price": 150000
+        "price": 700000
       }
     ],
     "appliances": [

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import Input from "../../components/Input";
 
 function Login() {

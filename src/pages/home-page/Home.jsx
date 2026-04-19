@@ -3,7 +3,7 @@ import axios from "axios";
 import gsap from "gsap";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -66,7 +66,7 @@ function Home() {
   }, [phone, appliances, fashions]);
 
   return (
-    <div>
+    <div className="pt-24">
       <title>Home</title>
       <Header />
       <Hero />
@@ -95,18 +95,20 @@ function Home() {
                 className="p-4"
               >
                 {value.slice(0, 6).map((item) => (
-                  <SwiperSlide key={item.id}>
-                    <div className="product-card p-2 sm:p-3 m-1 rounded text-black hover:shadow-lg transition-shadow duration-300 cursor-pointer">
-                      <img
-                        src={item.image}
-                        alt={item.spec}
-                        className="w-full object-cover rounded"
-                      />
-                      <h3 className="text-sm text-gray-600">{item.spec}</h3>
-                      <p className="text-lg font-semibold">
-                        ₦ {item.price.toLocaleString()}
-                      </p>
-                    </div>
+                  <SwiperSlide>
+                    <Link to={`/details/${key}/${item.id}`} key={item.id}>
+                      <div className="product-card p-2 sm:p-3 m-1 rounded text-black hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                        <img
+                          src={`/${item.image}`}
+                          alt={item.spec}
+                          className="w-full object-cover rounded"
+                        />
+                        <h3 className="text-sm text-gray-600">{item.spec}</h3>
+                        <p className="text-lg font-semibold">
+                          ₦ {item.price.toLocaleString()}
+                        </p>
+                      </div>
+                    </Link>
                   </SwiperSlide>
                 ))}
               </Swiper>

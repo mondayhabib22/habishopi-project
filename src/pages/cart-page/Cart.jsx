@@ -1,9 +1,11 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import axios from "axios";
 
 function Cart() {
+  const [cartItems, setCartItems] = useState([]);
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -15,6 +17,19 @@ function Cart() {
         ease: "power2.out",
       });
     }
+
+    const addToCart = async (product) => {
+      try {
+        const response = await axios.post("http://localhost:3001/cart", {
+          productId: product.id,
+          quantity: 1,
+        });
+        setCartItems(response.data);
+      } catch (error) {
+       setCartItems("Error fetching cart items"); 
+      }
+    }
+    fetchCarttems();
   }, []);
 
   return (

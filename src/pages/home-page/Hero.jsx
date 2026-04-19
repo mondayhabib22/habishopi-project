@@ -2,7 +2,7 @@ import React from "react";
 
 function Hero() {
   return (
-    <div className="relative overflow-hidden flex flex-col-reverse lg:flex-row items-center justify-between min-h-screen md:h-screen bg-gradient-to-br from-indigo-950 via-violet-900 to-purple-900 text-white p-4 sm:p-8 mt-32 sm:mt-28 md:mt-20 rounded-2xl gap-10">
+    <div className="relative overflow-hidden flex flex-col-reverse lg:flex-row items-center justify-between min-h-screen md:h-screen bg-gradient-to-br from-indigo-950 via-violet-900 to-purple-900 text-white p-4 sm:p-8 mt-8 sm:mt-3 md:mt-1 rounded-2xl gap-10">
       <div className="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_15%_30%,rgba(56,189,248,0.28),transparent_40%),radial-gradient(circle_at_85%_50%,rgba(168,85,247,0.28),transparent_40%)]"></div>
       <div className="absolute -left-20 top-20 w-36 h-36 rounded-full bg-cyan-300/20 blur-3xl animate-pulse"></div>
       <div className="absolute right-12 bottom-14 w-28 h-28 rounded-full bg-pink-400/20 blur-2xl animate-pulse"></div>

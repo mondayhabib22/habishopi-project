@@ -1,8 +1,24 @@
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const Header = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+  const navigate = useNavigate();
+
+  const handleSearch = () => {
+    if (searchTerm.trim()) {
+      navigate(`/products?search=${encodeURIComponent(searchTerm)}`);
+      setSearchTerm("");
+    }
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      handleSearch();
+    }
+  };
   return (
-    <header className="fixed w-full top-0 z-50 bg-gray-900/95 backdrop-blur shadow-lg mb-40">
+    <header className="fixed w-full top-0 z-50 bg-gray-900/95 backdrop-blur shadow-lg">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between p-4 sm:p-5 w-full">
           <Link
@@ -71,9 +87,15 @@ const Header = () => {
               <input
                 type="search"
                 placeholder="Search products..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                onKeyPress={handleKeyPress}
                 className="bg-gray-800 text-white px-4 py-2 focus:outline-none flex-1"
               />
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 cursor-pointer transition">
+              <button
+                onClick={handleSearch}
+                className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 cursor-pointer transition"
+              >
                 Search
               </button>
             </div>
@@ -141,9 +163,15 @@ const Header = () => {
             <input
               type="search"
               placeholder="Search products..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              onKeyPress={handleKeyPress}
               className="bg-gray-800 text-white px-4 py-2 focus:outline-none flex-1"
             />
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 cursor-pointer transition">
+            <button
+              onClick={handleSearch}
+              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 cursor-pointer transition"
+            >
               Search
             </button>
           </div>

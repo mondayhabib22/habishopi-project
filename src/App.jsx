@@ -1,13 +1,11 @@
-import { Route, Routes } from "react-router";
+import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home-page/Home";
 import Login from "./pages/login-page/Login";
 import Orders from "./pages/orders-page/Orders";
 import Cart from "./pages/cart-page/Cart";
-import Phones from "./pages/phones-page/Phones";
-import Appliances from "./pages/appliances-page/Appliances";
-import Fashions from "./pages/fashions-page/Fashions";
 import Signup from "./pages/signup-page/Signup";
 import ProductDispay from "./pages/product-display";
+import Details from "./pages/details-page/Details";
 
 const App = () => {
   return (
@@ -17,10 +15,7 @@ const App = () => {
       <Route path="orders" element={<Orders />} />
       <Route path="cart" element={<Cart />} />
       <Route path="products" element={<ProductDispay />} />
-      
-      {/* <Route path="phones" element={<Phones />} /> */}
-      {/* <Route path="appliances" element={<Appliances />} /> */}
-      {/* <Route path="fashions" element={<Fashions />} /> */}
+      <Route path="details/:category/:id" element={<Details />} />
       <Route path="signup" element={<Signup />} />
     </Routes>
   );
